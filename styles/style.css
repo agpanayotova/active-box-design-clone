@@ -1,0 +1,247 @@
+body {
+  background: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#nav {
+  min-height: 750px;
+  background-image: url("../images/header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 25% 75%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  background-attachment: fixed;
+}
+
+#nav::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 62.6%;
+  padding-bottom: 36px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.left-nav {
+  padding-top: 40px;
+  padding-left: 18.7%;
+}
+.right-nav {
+  position: absolute;
+  top: 0;
+  left: 45%;
+}
+
+.right-nav ul li {
+  margin-top: 45px;
+  margin-left: 5px;
+  display: inline-block;
+}
+.right-nav ul li a {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  margin-left: 60px;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.75);
+}
+.right-nav ul li a:hover {
+  color: #ffffff;
+  transition: background-color, color, 0.3s;
+}
+
+header {
+  /* position: absolute; */
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+header h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 65px;
+  color: #ffffff;
+}
+
+header p {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 80px;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 15px 40px;
+  background-color: #e84545;
+  border-radius: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.features-container {
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  vertical-align: center;
+  margin-bottom: 50px;
+  flex-direction: wrap;
+}
+
+.element {
+  display: block;
+  justify-content: center;
+  width: 33.33%;
+  /* position: relative; */
+}
+.element .icon {
+  justify-content: center;
+  vertical-align: center;
+  display: flex;
+  flex-direction: row;
+}
+.element h5 {
+  text-transform: uppercase;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  display: flex;
+  justify-content: center;
+  vertical-align: center;
+  flex-direction: row;
+  margin-top: 30px;
+}
+.description {
+  font-size: 14px;
+  line-height: 22.4px;
+  color: #6c7279;
+  margin: 0 0 10px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  flex-direction: column;
+}
+
+.projects-container {
+  position: relative;
+  max-width: 100%;
+  /* width: 50%; */
+  padding-left: 0px;
+  padding-right: 1px;
+  padding-bottom: 1px;
+  display: flex;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  /* background: rgb(0, 0, 0); */
+  background: rgba(232, 69, 69, 0.9); /* see-through */
+  transition: 0.5s ease;
+  opacity: 0;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.overlay h6 {
+  text-transform: uppercase;
+  color: #fff;
+}
+.overlay p {
+  font-size: 14px;
+  color: #fff;
+}
+.work-element {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  overflow: hidden;
+}
+.break {
+}
+.projects-container:hover .overlay {
+  opacity: 1;
+  animation-name: fadeIn;
+  animation-fill-mode: both;
+  visibility: visible;
+}
+
+.teams {
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  vertical-align: center;
+  margin-bottom: 50px;
+  flex-direction: wrap;
+}
+.person {
+  display: block;
+  justify-content: center;
+  width: 33.33%;
+  text-align: center;
+}
+.person .picture {
+  justify-content: center;
+  vertical-align: center;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+h4 {
+  font-size: 22px;
+  color: #2d3033;
+  font-weight: 400;
+  margin-bottom: 10px;
+  
+}
+h5#team-member {
+  color: #e84545;
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.testimonials-container{
+  max-height: 400px;
+}
+
+.testimonials-container img{
+  height: 100%;
+}
+
+.dot{
+  cursor: pointer;
+  user-select: none;
+  min-width: 5px;
+  min-height: 3px;
+}
